@@ -1,0 +1,77 @@
+## https://github.com/scopatz/nanorc
+include ~/.config/nano/syntax-highlighting/*.nanorc
+
+## Make nextword/chopwordright stop at word ends.
+set afterends
+
+## Auto indent new line to the same number of
+## tabs as the precending or next line
+set autoindent
+
+## Constantly display the cursor position in the status bar or minibar.
+set constantshow
+
+## Draw a vertical stripe at the given column.
+set guidestripe 120
+
+## Display a "scrollbar" on the righthand side of the edit window.
+set indicator
+
+## Display line numbers to the left (and any anchors in the margin).
+set linenumbers
+
+## Suppress the title bar and show the filename plus a cursor-position
+## percentage in the space of the status bar.
+set minibar
+
+## Don't display the helpful shortcut lists at the bottom of the screen.
+set nohelp
+
+## Remember the cursor position in each file for the next editing session.
+set positionlog
+
+## Try to work around a mismatching terminfo terminal description.
+set rawsequences
+
+## Do regular-expression searches by default.
+## Regular expressions are of the extended type (ERE).
+set regexp
+
+## Spread overlong lines over multiple screen lines.
+set softwrap
+
+## Use this tab size instead of the default; it must be greater than 0.
+set tabsize 4
+
+## Convert each typed tab to the fitting number of spaces.
+set tabstospaces
+
+## Let an unmodified Backspace or Delete erase the marked region (instead
+## of a single character, and without affecting the cutbuffer).
+set zap
+
+set titlecolor bold,purple
+set promptcolor bold,purple
+set statuscolor bold,purple
+set errorcolor bold,white,purple
+set spotlightcolor black,lightyellow
+set selectedcolor lightwhite,purple
+set stripecolor ,purple
+set scrollercolor purple
+set numbercolor purple
+
+bind ^/ comment all
+bind ^X cut main
+bind ^C copy main
+bind ^V paste all
+bind ^Q exit all
+bind ^S savefile main
+bind ^Z undo main
+bind ^Y redo main
+bind ^F whereis all
+bind ^G findnext all
+bind ^B wherewas all
+bind ^D findprevious all
+bind ^R replace main
+bind ^T gotoline main
+bind ^E execute main
